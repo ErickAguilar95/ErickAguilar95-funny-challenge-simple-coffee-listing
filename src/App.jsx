@@ -1,6 +1,9 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import { CardCoffee } from './components/card_coffee'
+import { useEffect, useState } from 'react';
+import './App.css';
+import { CardCoffee } from './components/card_coffee';
+
+import BgCaffee from './assets/bg-cafe.jpg';
+import Vector from './assets/vector.svg';
 
 function App() {
   const [coffeList, setCoffeList] = useState([])
@@ -18,10 +21,10 @@ function App() {
 
   return (
     <>
-      <img src="src/assets/bg-cafe.jpg" alt="" className='banner' />
+      <img src={BgCaffee} alt="" className='banner' />
       <section className='container'>
         <header className='coffee-header'>
-          <img className='coffe-vector' src="src/assets/vector.svg" alt="" />
+          <img className='coffe-vector' src={Vector} alt="vector" />
           <div className='coffee-header-section'>
             <h1 className='coffee-tittle'>Our Collection</h1>
             <p className='coffee-description'>
